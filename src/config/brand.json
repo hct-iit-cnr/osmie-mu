@@ -1,7 +1,7 @@
 {
   "$schema": "./brand.schema.json",
   "$comment": "Single source of truth for brand identity (everything a rebrand edits, except the logo SVGs in assets/brand/ and the OAuth signing keypair in oauth.public-jwks.json). Consumed by the app via the typed adapters src/config/brand.ts (identity/links/services), brand-theme.ts (colors) and oauth.ts (oauth), and directly by the Node build scripts, app.config.js and the Cloudflare Workers. Field docs live in brand.schema.json.",
-  "name": "mu",
+  "name": "osmie",
   "hosts": ["mu.social"],
   "socialHandle": "",
   "colors": {
@@ -180,12 +180,12 @@
         "primary_975": "#29071D"
       }
     },
-    "defaultAccent": "pink"
+    "defaultAccent": "yellow"
   },
   "oauth": {
     "$comment": "scope = what NEW logins request (keep transitional-only so every PDS accepts it). declaredScope = superset advertised in client metadata (must cover step-ups like identity:handle AND any scope older cached bundles still request). See src/config/oauth.ts.",
     "defaultBaseUrl": "https://mu.social",
-    "clientName": "mu",
+    "clientName": "osmie",
     "scope": "atproto transition:generic transition:email transition:chat.bsky",
     "declaredScope": "atproto transition:generic transition:email transition:chat.bsky identity:handle account:email?action=manage account:status?action=manage",
     "handleResolver": "https://bsky.social",

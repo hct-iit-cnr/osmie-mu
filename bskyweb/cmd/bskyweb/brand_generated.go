@@ -2,7 +2,7 @@
 
 package main
 
-const brandName = "mu"
+const brandName = "osmie"
 const brandHost = "mu.social"
 const brandHomeURL = "https://mu.social"
 const brandSocialCardURL = "https://mu.social/static/social-card-default-gradient.png"
